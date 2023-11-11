@@ -14,10 +14,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UsuarioController {
 
 	@GetMapping("/")
+	public String inicio() {
+		return "inicio";
+	}
+	
+	@GetMapping("/login")
 	public String login() {
 		return "login";
 	}
+
+	@GetMapping("/home")
+	public String home() {
+		return "home";
+	}
 	
-	
+	@GetMapping("/admin")
+	public String admin() {
+		return "admin";
+	}
 
 }
